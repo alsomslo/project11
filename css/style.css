@@ -1,0 +1,145 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+
+    padding: 0 50px;
+
+}
+
+.header_wrap {
+    padding: 70px 0 0 0;
+}
+
+.header img {
+    width: 120px;
+    height: 90px;
+}
+
+.header h1 {
+    height: 100px;
+    transition: 0.5s;
+}
+
+.header.on h1 {
+    height: 50px;
+}
+
+
+
+.gnb {
+    position: fixed;
+    top: 50%;
+    right: 50px;
+    /* transform: translate(0, -50%); */
+    z-index: 999;
+}
+
+.gnb li a {
+    display: block;
+    position: relative;
+    width: 100px;
+    height: 21px;
+
+
+}
+
+.gnb li a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.gnb li.on a span {
+    display: block;
+
+    /* transform: translate(-100%, 0); */
+}
+
+.gnb li a::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 50%;
+    height: 1px;
+    background: #333;
+    transition: width 0.3s;
+
+}
+
+.gnb li.on a::after {
+    width: 100%;
+}
+
+.section.on {
+    font-size: 100px;
+    transition: 0.5s;
+}
+
+.mainslide .itm {
+    height: 100vh;
+    object-fit: cover;
+
+}
+
+
+
+.mainslide .itm02 {
+    background: url(../images/mainvisual01.jpg) no-repeat center center/cover;
+}
+
+.mainslide .itm03 {
+    background: url(../images/mainvisual02.jpg) no-repeat center center/cover;
+}
+
+.mainconcept {
+
+    background: #333;
+}
+
+.mainconcept .concept_slide {
+
+    width: 1000px;
+}
+
+.mainconcept .concept_slide .itm {
+
+    height: 300px;
+}
+
+.mainconcept .concept_slide .itm01 {
+    background: url(../images/section02_01.jpg)no-repeat center center/cover;
+}
+
+.mainconcept .concept_slide .itm02 {
+    background: url(../images/section02_02.jpg) no-repeat center center/cover;
+}
+
+.mainconcept .title {
+    margin: 0 0 50px;
+    color: #d3ceb9;
+
+}
+
+.mainconcept .title h2 {
+    font-size: 150px;
+    font-weight: 400;
+    margin: 0 0 50px 0;
+    font-family: 'Cinzel', serif;
+}
+
+.mainconcept .title p {
+    font-size: 20px;
+}
+
+
+
+
+.maincotent {
+    height: 100vh;
+    background: url(../images/section02_02.jpg)
+}
