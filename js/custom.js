@@ -1,7 +1,8 @@
 $(function () {
 
+
     $('.main').fullpage({
-        anchors: ['mainvisual', '.mainconcept', 'maincotent'],
+        anchors: ['main', 'sub01', 'sub02', 'sub03'],
         navigator: false,
         css3: false,
         responsiveWidth: 700,
@@ -25,7 +26,14 @@ $(function () {
             }
         }
     });
-    $('.mainvisual .itm01').YTPlayer({
+
+    $(window).on('scroll', function () {
+        let sct = $(window).scrollTop();
+        sct > 0 ? $('.header').addClass('on') : $('.header').removeClass('on');
+
+
+    })
+    $('.mainvisual').YTPlayer({
         videoURL: 'ITm3YAJxgWA',
         containment: '.mainvisual .itm01',
         showControls: false,
@@ -48,7 +56,7 @@ $(function () {
 
     $('.concept_slide').slick({
         dots: false,
-        arrows: false,
+        arrows: true,
         infinite: true,
         speed: 500,
         fade: true,
