@@ -16,7 +16,7 @@ $(function () {
             $('.main ').eq(idx - 1).addClass('on').siblings().removeClass('on');
         },
         onLeave: function (idx, nidx, dir) {
-            $('.gnb li').eq(nidx - 1).addClass('on').siblings().removeClass('on');
+            $('.page_name li').eq(nidx - 1).addClass('on').siblings().removeClass('on');
             console.log(idx, nidx, dir);
 
             if (dir == 'up') {
@@ -33,6 +33,12 @@ $(function () {
 
 
     })
+
+    $('.menu_btn').on('click', function () {
+        $(this).toggleClass('on');
+        $('.gnb').toggleClass('on');
+
+    });
     $('.mainvisual').YTPlayer({
         videoURL: 'ITm3YAJxgWA',
         containment: '.mainvisual .itm01',
@@ -45,6 +51,17 @@ $(function () {
 
 
     $('.mainslide').slick({
+        arrows: false,
+        dots: false,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+
+    });
+
+
+    $('.gnb_slide').slick({
         arrows: false,
         dots: false,
         infinite: true,
