@@ -937,7 +937,7 @@
         content: "Prev";
         position: absolute;
         left: 10px;
-        font-size: 18px;
+        font-size: 14px;
         color: #fff;
         font-weight: 300;
 
@@ -954,7 +954,7 @@
         content: "Next";
         position: absolute;
         right: 10px;
-        font-size: 18px;
+        font-size: 14px;
         color: #fff;
         font-weight: 300;
 
