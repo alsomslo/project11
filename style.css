@@ -765,7 +765,7 @@
     }
 
     .gnb .gnb_box>ul>li .sub_m {
-        display: inherit;
+        display: initial;
         font-size: 14px;
         gap: 30px;
         line-height: 30px;
