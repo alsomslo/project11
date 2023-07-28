@@ -765,7 +765,7 @@
     }
 
     .gnb .gnb_box>ul>li .sub_m {
-        display: inherit;
+        display: initial;
         font-size: 14px;
         gap: 30px;
         line-height: 30px;
@@ -1195,6 +1195,7 @@
     .mainpool .title h2 {
         font-size: 50px;
         font-weight: 400;
+        margin: 0 0 20px 0;
     }
 
     .mainpool .title p {
