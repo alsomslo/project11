@@ -114,6 +114,14 @@
     font-weight: 300;
 }
 
+.gnb .gnb_box>ul>li .sub_m {
+    display: flex;
+    font-size: 16px;
+    gap: 30px;
+    line-height: 24px;
+    font-weight: 300;
+}
+
 
 
 
@@ -753,9 +761,10 @@
     }
 
     .gnb .gnb_box>ul>li .sub_m {
+        display: inherit;
         font-size: 14px;
         gap: 30px;
-        line-height: 24px;
+        line-height: 30px;
         font-weight: 300;
     }
 
