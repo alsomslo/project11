@@ -555,6 +555,10 @@
     font-weight: 400;
 }
 
+.mainpool .title p {
+    margin: 0 0 30px 0;
+}
+
 
 
 .mainpool .img_box img {
@@ -1090,8 +1094,9 @@
 
     .maincontent .content_wrap .title {
         position: absolute;
+        top: 0;
         left: 50%;
-        transform: translate(-50%);
+        transform: translate(-50%, -50%);
         font-size: 50px;
         white-space: normal;
         text-align: center;
@@ -1179,7 +1184,7 @@
         position: relative;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, 41%);
+        transform: translate(-50%, 50%);
 
 
 
@@ -1190,6 +1195,10 @@
     .mainpool .title h2 {
         font-size: 50px;
         font-weight: 400;
+    }
+
+    .mainpool .title p {
+        margin: 0 0 20px 0;
     }
 
 
