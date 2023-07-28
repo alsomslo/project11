@@ -5,7 +5,7 @@ $(function () {
         anchors: ['main', 'sub01', 'sub02', 'sub03'],
         navigator: false,
         css3: false,
-        responsiveWidth: 700,
+        responsiveWidth: 768,
         responsiveHeight: 1,
         afterRender: function () {
             $('.main ').eq(0).addClass('on')
@@ -51,7 +51,7 @@ $(function () {
 
 
     $('.mainslide').slick({
-        arrows: false,
+        arrows: true,
         dots: false,
         infinite: true,
         speed: 500,
@@ -61,15 +61,9 @@ $(function () {
     });
 
 
-    $('.gnb_slide').slick({
-        arrows: false,
-        dots: false,
-        infinite: true,
-        speed: 500,
-        fade: true,
-        cssEase: 'linear'
 
-    });
+
+
 
     $('.concept_slide').slick({
         dots: false,
